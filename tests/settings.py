@@ -1,7 +1,7 @@
 """Settings module for test app."""
 ENV = "development"
 TESTING = True
-SQLALCHEMY_DATABASE_URI = "postgresql://developer@127.0.0.1:5432/flaskdeliveryapp"
+SQLALCHEMY_DATABASE_URI = "postgresql://developer@127.0.0.1:5432/rype"
 SECRET_KEY = "not-so-secret-in-tests"
 BCRYPT_LOG_ROUNDS = (
     4  # For faster tests; needs at least 4 to avoid "ValueError: Invalid rounds"
