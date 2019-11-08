@@ -24,7 +24,6 @@ class Role(SurrogatePK, Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)
     permissions = db.Column(db.BigInteger)
-    user = relationship("User", backref="roles")
 
     @classmethod
     def populate(cls):
