@@ -110,41 +110,41 @@ class User(UserMixin, SurrogatePK, Model):
     cv = db.Column(db.Integer, nullable=True, default=None)
     ctype = db.Column(db.String(10), nullable=True, default="")
 
-    # def __init__(
-    #     self,
-    #     username,
-    #     first_name,
-    #     middle_initial,
-    #     last_name,
-    #     email,
-    #     phone_number,
-    #     role_id,
-    #     password,
-    #     address,
-    #     active,
-    #     stars,
-    #     salary,
-    #     commision,
-    #     credit_card,
-    #     cv,
-    #     ctype,
-    # ):
-        # self.username = username
-        # self.first_name = first_name
-        # self.middle_initial = middle_initial
-        # self.last_name = last_name
-        # self.email = email
-        # self.phone_number = phone_number
-        # self.role_id = role_id
-        # self.set_password(password)
-        # self.address = address
-        # self.active = active
-        # self.stars = stars
-        # self.salary = salary
-        # self.commision = commision
-        # self.credit_card = credit_card
-        # self.cv = cv
-        # self.ctype = ctype
+    def __init__(
+        self,
+        username,
+        first_name,
+        middle_initial,
+        last_name,
+        email,
+        phone_number,
+        role_id,
+        password_hash,
+        address,
+        active,
+        stars,
+        salary,
+        commision,
+        credit_card,
+        cv,
+        ctype,
+    ):
+        self.username = username
+        self.first_name = first_name
+        self.middle_initial = middle_initial
+        self.last_name = last_name
+        self.email = email
+        self.phone_number = phone_number
+        self.role_id = role_id
+        self.password_hash = password(password)
+        self.address = address
+        self.active = active
+        self.stars = stars
+        self.salary = salary
+        self.commision = commision
+        self.credit_card = credit_card
+        self.cv = cv
+        self.ctype = ctype
 
     @property
     def name(self):
