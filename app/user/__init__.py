@@ -1,3 +1,7 @@
 # -*- coding: utf-8 -*-
 """The user module."""
-from . import views  # noqa
+from flask import Blueprint
+
+auth = Blueprint('auth', __name__)
+
+# from . import views  # noqa
