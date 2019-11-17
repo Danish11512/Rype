@@ -85,6 +85,21 @@ def customerHome():
 
 @blueprint.route("/customerShoppingCart/")
 def customerShoppingCart():
-    """Customer Home."""
+    """Customer Shopping Cart."""
     form = LoginForm(request.form)
     return render_template("public/customerShoppingCart.html", form=form)
+
+
+
+@blueprint.route("/customerDeliveryRating/")
+def customerDeliveryRating():
+    """Customer Delivery Rating."""
+    form = LoginForm(request.form)
+    return render_template("public/customerDeliveryRating.html", form=form)
+
+
+@blueprint.route("/customerFoodRating/")
+def customerFoodRating():
+    """Customer Food Rating."""
+    form = LoginForm(request.form)
+    return render_template("public/customerFoodRating.html", form=form)
