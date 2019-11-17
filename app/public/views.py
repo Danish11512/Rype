@@ -103,3 +103,10 @@ def customerFoodRating():
     """Customer Food Rating."""
     form = LoginForm(request.form)
     return render_template("public/customerFoodRating.html", form=form)
+
+
+@blueprint.route("/customerPay/")
+def customerPay():
+    """Customer Pay."""
+    form = LoginForm(request.form)
+    return render_template("public/customerPay.html", form=form)

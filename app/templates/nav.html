@@ -28,8 +28,11 @@
         <a class="nav-link" href="{{ url_for('public.customerDeliveryRating') }}">Customer Delivery Rating</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('public.customerFoodRating') }}">Customer Food Rating</a>
-        </li>
+        <a class="nav-link" href="{{ url_for('public.customerFoodRating') }}">Customer Food Rating</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('public.customerPay') }}">Customer Pay</a>
+      </li>
     </ul>
     {% if current_user and current_user.is_authenticated %}
     <ul class="navbar-nav my-auto">
