@@ -81,3 +81,10 @@ def customerHome():
     """Customer Home."""
     form = LoginForm(request.form)
     return render_template("public/customerHome.html", form=form)
+
+
+@blueprint.route("/customerShoppingCart/")
+def customerShoppingCart():
+    """Customer Home."""
+    form = LoginForm(request.form)
+    return render_template("public/customerShoppingCart.html", form=form)

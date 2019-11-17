@@ -1,0 +1,28 @@
+{% extends "layout.html" %} <!-- This pulls in the basics for an html document-->
+{% block content %}
+
+
+<div class="display-4 text-info text-center">Shopping Cart</div>
+<div style="margin-top: 5%;"> </div>
+
+<!-- If we can combine these all on one line, that would be great. If we could add the css of badge from bootstap, then this will be even easier!-->
+
+
+<div class="col-sm-6 justify-content-end">
+    <div class="list">
+        <ul class="list-group">
+            <li class="list-group-item">Burger <span class="float-right">12.53</span> </li>
+            <li class="list-group-item">Taco <span class="float-right">4.38</span>   </li>
+            <li class="list-group-item">Pizza <span class="float-right">1.99</span>     </li>
+
+            <li class="list-group-item list-group-item-success">Total  <span class="float-right">18.90</span>  </li>
+        </ul>
+        <div style="margin-top: 5%;"> </div>
+        <div class="text-center"><button type="button" class="btn btn-outline-primary">Order</button></div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+<!-- NOTE, class label = center align text + underline (Ie label this section of the page!) -->
